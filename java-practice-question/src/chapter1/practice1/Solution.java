@@ -34,6 +34,26 @@ public class Solution {
 			System.out.println(25);
 		}
 
+		System.out.println(2 + solution.c());
+
+		System.out.println(solution.d() * (solution.a() + 1));
+		
+		/**
+		 * console print
+
+		 	10
+			12
+			8
+			3
+			6
+			19
+			false
+			4
+			16
+			5
+			16
+			
+		 **/
 	}
 
 	public int a() {
@@ -42,6 +62,24 @@ public class Solution {
 
 	public int b() {
 		return a() + 1;
+	}
+
+	public int c() {
+		if (a() > b()) {
+			return b();
+		} else {
+			return a();
+		}
+	}
+
+	public int d() {
+		if (a() > b()) {
+			return a();
+		} else if (a() < b()) {
+			return b();
+		} else {
+			return -1;
+		}
 	}
 
 }
