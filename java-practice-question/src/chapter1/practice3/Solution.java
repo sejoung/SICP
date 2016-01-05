@@ -1,5 +1,8 @@
 package chapter1.practice3;
 
+/**
+ * Define a procedure that takes three numbers as arguments and returns the sum of the squares of the two larger numbers.
+ */
 public class Solution {
 
 	public static void main(String[] args) {
